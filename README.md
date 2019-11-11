@@ -9,8 +9,9 @@
 服务端github地址：https://github.com/ygh1483345314/diaryServer
 
 #### 安装教程
-1. npm install
-2. npm run dev
+1. 安装node.js
+2. npm install
+3. npm run dev
 #### 使用说明
 1. 前端页面地址： http://localhost:8080
 2. 管理页面登录地址： http://localhost:8080/#/adminLogin
