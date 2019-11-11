@@ -11,11 +11,9 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {//虚拟目录
-        // target: 'http://117.48.227.211:8031',//后台Springboot项目的请求网址 http://117.48.227.211  http://localhost
         target: 'http://localhost:8031',
         changeOrigin: true,
         pathRewrite: {
-          // '^/sell': ''//由于上面的虚拟目录实际上是不存在的，不去掉的话访问的时候显示的url会变成'http://localhost:3000/api'，所以得去掉
         }
       }
     },
