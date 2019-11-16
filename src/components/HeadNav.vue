@@ -9,14 +9,16 @@
       </div>
     <div class="head-right  animated bounceInDown" >
       <ul>
-          <li><router-link to="/Home"><i class="el-icon-s-home">首页</i></router-link> </li>
+          <li><router-link to="/Home"><i class="el-icon-s-home"><span>首页</span></i></router-link> </li>
           <!--<li><i class="el-icon-s-custom"><a href="">关于</a></i></li>-->
-          <li><router-link to="/Taglist"><i class="el-icon-s-promotion">分类/标签 </i></router-link></li>
-          <li><router-link to="/Archives"><i class="el-icon-s-cooperation">归档</i></router-link></li>
+        <li><router-link to="/Taglist"><i class="el-icon-s-promotion"><span>分类/标签</span></i></router-link></li>
+        <li><router-link to="/Archives"><i class="el-icon-s-cooperation"><span>归档</span></i></router-link></li>
           <li v-for="m in meunList">
             <a @click="getUrl(m)">
               <i :class="m.icon" >
+                <span>
                 {{m.name}}
+                </span>
               </i>
               </a>
 
@@ -195,6 +197,11 @@
 .head-pc .head-right ul li i:hover a{
   color: #ffffff;
   transition: all 0.5s ease 0s;
+}
+
+
+i span{
+  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 
 

@@ -1,16 +1,18 @@
 <template>
   <div class="taglist animated fadeIn" style="animation-duration: 1000ms" >
      <div class="taglist-body">
-        <p class="taglist-title">分类</p>
-        <div class="tags">
-            <div v-for="type in typelist" class="tag" :key="type.id" @click="btnSearchByType(type.name)">{{type.name}} <span>{{type.qty}}篇</span></div>
-        </div>
+       <div class="taglist-down">
+          <p class="taglist-title">分类</p>
+          <div class="tags">
+              <div v-for="type in typelist" class="tag" :key="type.id" @click="btnSearchByType(type.name)">{{type.name}} <span>{{type.qty}}篇</span></div>
+          </div>
 
 
-       <p class="taglist-title">标签</p>
-            <div class="labels">
-              <div v-for="tag in taglist" :key="tag.id"    @click="btnSearchByTag(tag.name)" class="label">{{tag.name}}</div>
-            </div>
+         <p class="taglist-title">标签</p>
+              <div class="labels">
+                <div v-for="tag in taglist" :key="tag.id"    @click="btnSearchByTag(tag.name)" class="label">{{tag.name}}</div>
+              </div>
+       </div>
       </div>
   </div>
 </template>
@@ -54,8 +56,12 @@
   height: auto;
   margin: 0 auto;
   padding: 0 10px;
-  transition: width .3s;
 }
+
+.taglist-down{
+  animation: show 0.8s;
+}
+
 
 .taglist-body{
   margin: 0 auto;
@@ -70,6 +76,7 @@
 
 .taglist-title{
   font-size: 22px;
+  text-align: center;
 }
 
 .tags{
@@ -81,7 +88,7 @@
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 6%;
-  /*min-width: 600px;*/
+  min-width: 600px;
   max-width: 600px;
   justify-content: center
 }

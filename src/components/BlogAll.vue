@@ -12,6 +12,24 @@
     </div>
     <rightNav ref="rightchild"></rightNav>
   </div>
+
+
+  <!--<el-backtop target=".page-component__scroll .el-scrollbar__wrap" :bottom="100">-->
+    <!--<div-->
+      <!--style="{-->
+        <!--height: 100%;-->
+        <!--width: 100%;-->
+        <!--background-color: #f2f5f6;-->
+        <!--box-shadow: 0 0 6px rgba(0,0,0, .12);-->
+        <!--text-align: center;-->
+        <!--line-height: 40px;-->
+        <!--color: #1989fa;-->
+      <!--}"-->
+    <!--&gt;-->
+      <!--UP-->
+    <!--</div>-->
+  <!--</el-backtop>-->
+
   <div class="right-down-nav"  @click="show()" >
     <span class="span1_nav toggle-line" :class="{'span1':hideRightNav}"></span>
     <span  class="span2_nav toggle-line" :class="{'span2':hideRightNav}"></span>
@@ -78,9 +96,7 @@
         },
         getPath(){
           if(this.$route.path=="/BlogDetail"){
-                // this.setSelectRightnav(true)
-                // this.setHideRightNav(true)
-                // this.span1=true
+
           }else{
                 this.setSelectRightnav(false)
                 this.setHideRightNav(false)
@@ -95,22 +111,6 @@
         show: function () {
           this.setHideRightNav(!this.hideRightNav)
           this.span1=this.hideRightNav
-          // this.ishide = !this.ishide;
-          // this.span1 = !this.span1;
-          // this.$refs.rightchild.ishide = this.ishide
-          // thisishide.$refs.rightchild.selectNav = false
-          // // this.setArticleMenu=false;
-          // // console.log(this.$refs.rightchild)
-          // if (this.ishide) {
-          //   this.$refs.rightchild.$el.style.width = "290px";
-          //   this.$refs.rightchild.$el.style.transition = "all 0.3s ease 0s";
-          // } else {
-          //   this.$refs.rightchild.$el.style.width = "0";
-          //   this.$refs.rightchild.$el.style.transition = "all 0.3s ease 0s";
-          // }
-
-
-
         }
       }
 
@@ -123,7 +123,8 @@
     min-height: calc(100vh - 107px);
     padding-bottom: 90px;
     padding-top: 90px;
-    margin-bottom: -90px;
+    /*width: 0;*/
+    /*margin-bottom: -90px;*/
     margin-top: -90px;
   }
   .router-all{
@@ -133,11 +134,13 @@
   .left-body{
     height: auto;
     flex:1;
+    overflow: hidden;
   }
 
   .body-all {
     /*padding-right: auto;*/
     width: 100%;
+    /*width: 0;*/
     height: 100%;
     display:flex;
   }
@@ -150,10 +153,15 @@
     .right-down-nav{
       display: none;
     }
+    .router-body{
+      /*height: auto;*/
+      /*min-height: calc(100vh - 107px);*/
+      padding-bottom: 50px;
+      padding-top: 50px;
+      margin-top: -50px;
+    }
+
   }
-
-
-
 
   .right-down-nav{
     position: fixed;

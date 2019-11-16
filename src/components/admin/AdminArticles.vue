@@ -34,7 +34,8 @@
         label="文章标题"
         min-width="150px">
         <template slot-scope="scope">
-          <a href="#">{{scope.row.title}}</a>
+          <!--<a :href="'/#'+'/BlogDetail/'+scope.row.id">{{scope.row.title}}</a>-->
+          {{scope.row.title}}
         </template>
       </el-table-column>
 
@@ -68,24 +69,10 @@
         </template>
       </el-table-column>
 
-
-
-
       <el-table-column
         label="发布状态"
         min-width="100px"
         >
-        <!--<template slot-scope="scope">-->
-          <!--<el-select  :disabled="true" size="medium "  v-model="scope.row.status" multiple placeholder="发布状态">-->
-            <!--<el-option-->
-              <!--v-for="item in statusList"-->
-              <!--:key="item.value"-->
-              <!--:label="item.label"-->
-              <!--:value="item.value">-->
-            <!--</el-option>-->
-          <!--</el-select>-->
-        <!--</template>-->
-
         <template slot-scope="scope">
           <el-select   :disabled="true" v-model="scope.row.status"  placeholder="发布状态">
             <el-option
@@ -96,11 +83,7 @@
             </el-option>
           </el-select>
         </template>
-
-
       </el-table-column>
-
-
       <el-table-column
         label="操作"
         min-width="170px"
@@ -184,7 +167,7 @@
           this.$router.push({path: "/AdminNew",query: { id:row.id}})
         },
         selectClick(row) {
-          this.$router.push({path: "/BlogDetail",query: { id:row}})
+          this.$router.push({path: "/BlogDetail/"+row})
         },
         deleteClick(row) {
           this.$confirm('是否删除该文章?', '提示', {

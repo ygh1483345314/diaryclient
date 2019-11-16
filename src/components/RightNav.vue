@@ -15,7 +15,7 @@
               <div v-show="!selectRightNav" style="margin-top: 10px">
                 <img src="../assets/images/authImg.jpg" class="top-photo"/>
                 <div class="right-username">YEGHAO</div>
-                <div class="right-body">android开发、前端开发、php开发...(⊙o⊙)…什么都学的程序员~</div>
+                <div class="right-body">java开发、前端开发、python开发 什么都学的程序员~</div>
                 <div class="title_list">
                   <div class="title">
                     <p class="count">{{blogCount}}</p>

@@ -11,11 +11,12 @@ import axios from "./http";
 import store from './store'
 import hljs from 'highlight.js' // 引入JS
 import 'highlight.js/styles/googlecode.css' //样式文件
+import photoPreview from './components/photoPreview'
+
 
 import Clipboard from 'v-clipboard'
 
 Vue.use(Clipboard)
-
 Vue.prototype.$axios = axios;
 Vue.directive('highlight',function (el) {
   let blocks = el.querySelectorAll('pre code');
@@ -25,10 +26,9 @@ Vue.directive('highlight',function (el) {
 })
 Vue.use(mavonEditor)
 Vue.use(animated)
-// axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 Vue.config.productionTip = false
 Vue.use(ElementUI)
-
+Vue.use(photoPreview)
 
 /* eslint-disable no-new */
 new Vue({

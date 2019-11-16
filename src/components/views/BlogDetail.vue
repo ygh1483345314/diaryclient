@@ -23,11 +23,11 @@
              <transition name="slide-fade">
                <div class="qrcode-wrap" v-show="showQrcode" >
                   <span class="qrcode">
-                    <img src='http://blogimg.codebear.cn/FpUAXqT2VylK8w-b7D4Ah3phT9GC_water'/>
+                    <img src='http://img.yeblog.club/wechat.png'/>
                     <p>微信支付</p>
                   </span>
                  <span class="qrcode">
-                    <img src='http://blogimg.codebear.cn/FpUAXqT2VylK8w-b7D4Ah3phT9GC_water'/>
+                    <img src='http://img.yeblog.club/zhifubao.png'/>
                     <p>支付宝支付</p>
                   </span>
                </div>
@@ -134,12 +134,8 @@
     opacity: 0
   }
 
-
-
 .blogDetail-all{
-  /*width: 50%;*/
   max-width: 1000px;
-  /*min-width: 652px;*/
   min-height:100%;
   height: 100%;
   margin:0 auto;
@@ -151,6 +147,7 @@
   border: solid 1px #ccc ;
   box-shadow: 5px 5px 10px #ccc;
   animation: show .8s;
+  display:block;
 }
 .blogDetail-boom-body{
   width: 100%;
@@ -278,10 +275,14 @@
   margin-bottom: 10px;
   padding: 10px;
 }
+
+
+
 .blogDetail-main{
   /*padding: 40px*/
   min-height: 100%;
   margin: 30px auto;
+  width: auto;
   /*padding-top: 60px;*/
   padding-left: 3%;
   padding-right: 3%;
@@ -289,15 +290,15 @@
 }
   @media screen and (max-width: 650px) {
     .blogDetail-all {
-      width: 90%;
-      padding: 5%;
+      width: 96%;
+      padding: 2%;
       min-width: auto;
     }
 
     .blogDetail-main {
       min-height: 100%;
       height: 100%;
-      margin: 30px auto;
+      margin: 10px auto;
       /*padding-top: 60px;*/
       padding-left: 3%;
       padding-right: 3%;

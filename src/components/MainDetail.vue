@@ -92,23 +92,10 @@
 
       }),
       created(){
-        // var type=this.$route.query.type
-        // var tag=this.$route.query.tag
-        // if(type){
-        //   var  types=new Array();
-        //   types.push(type);
-        //   this.searchVo.type=types
-        // }
-        // if(tag){
-        //   var  tags=new Array();
-        //   tags.push(tag);
-        //   this.searchVo.tags=tags
-        // }
         this.initTypeAndTag();
         this.getBlogList()
       },
       mounted(){
-
         // Object.assign(this.$data, this.$options.data())
       },
       methods:{
@@ -131,8 +118,6 @@
           }
         },
         getBlogList(title){
-
-
           if(title!=null){
             this.searchVo.page=0;
             this.searchVo.title=title
@@ -145,8 +130,6 @@
               this.articlesArr=data.articlesArr
             })
         },
-
-
         handleCurrentChange(val){
           this.searchVo.page=val
           this.getBlogList();
