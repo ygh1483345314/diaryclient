@@ -41,7 +41,7 @@
 
     <div class="head-mobile">
       <div class="head-left animated rubberBand">
-        <span class="head-line"  >YeHao</span>
+        <span class="head-line"  ><router-link to="/Home">YeHao</router-link></span>
       </div>
 
       <div class="head-right-mobile  animated bounceInDown" >
