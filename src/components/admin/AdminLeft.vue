@@ -11,7 +11,7 @@
             </a>
           </div>
           <div  class="admin-head-left-font" >
-            <div> Hello Blog</div>
+            <div> YeHao Blog</div>
 
            </div>
         </div>
@@ -25,37 +25,6 @@
           </el-menu-item>
 
       </div>
-
-
-          <!--<div  v-if="item.type==0">-->
-          <!--<el-menu-item   index="/adminIndex" >-->
-            <!--<i class="el-icon-odometer"></i>-->
-            <!--<span slot="title">仪表盘</span>-->
-          <!--</el-menu-item>-->
-
-
-
-
-        <!--</div>-->
-
-        <!--<div >-->
-            <!--<el-submenu v-else-if="item.type==1" :index="item.url">-->
-                <!--<template slot="title">-->
-                  <!--<i :class="item.class"></i>-->
-                  <!--<span slot="title">{{item.name}}</span>-->
-                <!--</template>-->
-                <!--&lt;!&ndash;<el-menu-item-group title="分组2">&ndash;&gt;-->
-                <!--<div v-for="it in item.menus">-->
-                    <!--<el-menu-item :index="it.url">-->
-                      <!--<i :class="it.class"></i>-->
-                      <!--<span slot="title">{{it.name}}</span>-->
-                    <!--</el-menu-item>-->
-                <!--</div>-->
-          <!--</el-submenu>-->
-        <!--</div>-->
-
-
-
 
       </el-menu>
     </div>
@@ -138,26 +107,13 @@
         btnShow(){
           eventVue.$on("btnClose",(message)=>{   //这里最好用箭头函数，不然this指向有问题
             this.isCollapse = message
-            // message==true?this.opacity=0:this.opacity=1
           })
         },
 
-        // btnHide(){
-        //   eventVue.$on("btnHide",(message)=>{   //这里最好用箭头函数，不然this指向有问题
-        //
-        //     // message==true?this.opacity=0:this.opacity=1
-        //   })
-        // },
 
         updateTitle(title){
-          // console.log(this.$route)
           this.$emit('updateTitle',title);
-        },
-        // getPath(){
-        //  var pathName= this.$route.query.pathName
-        //  console.log(pathName)
-        // }
-
+      },
       }
 
     }

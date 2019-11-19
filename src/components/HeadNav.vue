@@ -4,7 +4,7 @@
   <div class="head-pc">
       <div class="head-left animated rubberBand">
 
-          <span class="head-line"  >YeHao</span>
+        <span class="head-line"><router-link to="/Home">YeHao</router-link></span>
 
       </div>
     <div class="head-right  animated bounceInDown" >
@@ -110,26 +110,9 @@
             this.$axios.get('/api/blog/menu',null)
               .then(res=>{
                 this.meunList=res.data.data;
-                console.log(this.meunList)
-                // for(var i=0;i<this.meunList.length;i++){
-                //   var url="/test"
-                //   if(this.meunList[i].url!=""){
-                //     url="/"+this.meunList[i].url
-                //   }
-                //     router.addRoutes([
-                //         {
-                //           path: url+"/*",
-                //           name: 'test',
-                //           component: () => import('../components/views/BlogDetail')
-                //         }
-                //     ])
-                // }
               })
 
           }
-
-
-
         }
         }
 </script>
@@ -161,7 +144,9 @@
   color: #555;
 }
 
-
+.head-line a{
+  color: black;
+}
 .head-right ul li{
   height: 90px;
   line-height: 90px;
