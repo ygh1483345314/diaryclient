@@ -12,7 +12,7 @@
         <div  v-for="itemMonth in item.monthDataSort" class="archives-body month">
           <p>{{itemMonth.month}}月</p>
           <div class="archives-note"  v-for="obj in itemMonth.archivesVoList">
-            <div class="archives-tetile">{{obj.title}}</div>
+            <div class="archives-tetile"><router-link :to="{path:'/BlogDetail/'+obj.id}"  v-html="obj.title"></router-link></div>
             <div class="archives-date"><i class="el-icon-date"></i>
               <span class="pc-ishide">发表于 </span>{{obj.dateb}} | <i class="el-icon-folder"></i>
               <span class="pc-ishide"></span>
@@ -186,7 +186,9 @@
   cursor: pointer;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
-
+.archives-tetile a{
+  color: #555;
+}
 .archives-note{
   width: 100%;
   padding: 20px;
