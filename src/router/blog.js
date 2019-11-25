@@ -2,7 +2,7 @@
 // import  Taglist from '@/components/views/Taglist'
 // import  Archives from  '@/components/views/Archives'
 // // import  BlogAll from  '@/components/BlogAll'
-import  BlogDetail from  '@/components/views/BlogDetail'
+// import  BlogDetail from  '@/components/views/BlogDetail'
 // import  BlogPage from  '@/components/views/BlogPage'
 
 

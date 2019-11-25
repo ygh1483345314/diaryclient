@@ -1,4 +1,4 @@
-import Vue from 'vue'
+// import Vue from 'vue'
 import Router from 'vue-router'
 import blog from './blog'
 import admin from './admin'
@@ -16,7 +16,7 @@ const routes = [
 
 
 
-export const router=new Router({
+export const router=new VueRouter({
   // mode: "history",
   base: process.env.BASE_URL,
   routes

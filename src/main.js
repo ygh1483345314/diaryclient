@@ -1,8 +1,8 @@
 
 import router from './router'
-import Vue from 'vue';
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
+// import Vue from 'vue';
+// import ElementUI from 'element-ui';
+// import 'element-ui/lib/theme-chalk/index.css';
 import App from './App.vue';
 import animated from 'animate.css'
 import mavonEditor from 'mavon-editor'
@@ -27,7 +27,7 @@ Vue.directive('highlight',function (el) {
 Vue.use(mavonEditor)
 Vue.use(animated)
 Vue.config.productionTip = false
-Vue.use(ElementUI)
+// Vue.use(ElementUI)
 Vue.use(photoPreview)
 
 /* eslint-disable no-new */
