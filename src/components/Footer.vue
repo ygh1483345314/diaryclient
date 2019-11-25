@@ -16,7 +16,7 @@
         }),
         methods: {
           timer() {
-            let startTime = new Date('2019/11/09 00:00:00')
+            let startTime = new Date('2019/07/01 00:00:00')
             let timer = setInterval(() => {
               let time = new Date() - startTime
               let day = parseInt(time / 1000 / 60 / 60 / 24, 10)
