@@ -83,6 +83,8 @@ module.exports = {
     'vue-router': 'VueRouter',
     'vue': 'Vue',
     'element-ui': 'ELEMENT',
+    'animate.css':'animated',
+    'highlight':'highlight'
   },
 
 

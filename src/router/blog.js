@@ -26,7 +26,7 @@ export default [
       { path: '/BlogPage/*', component:resolve => require(['@/components/views/BlogPage'],resolve) },
     ]
   },
-  // { path: '*', component: BlogAll },
+  { path: '*', component:resolve => require(['@/components/NotFound'],resolve) },
 ]
 
 

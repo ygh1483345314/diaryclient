@@ -24,11 +24,11 @@
              <transition name="slide-fade">
                <div class="qrcode-wrap" v-show="showQrcode" >
                   <span class="qrcode">
-                    <img src='http://blogimg.codebear.cn/FpUAXqT2VylK8w-b7D4Ah3phT9GC_water'/>
+                    <img src='http://img.yeblog.club/wechat.png'/>
                     <p>微信支付</p>
                   </span>
                  <span class="qrcode">
-                    <img src='http://blogimg.codebear.cn/FpUAXqT2VylK8w-b7D4Ah3phT9GC_water'/>
+                    <img src='http://img.yeblog.club/zhifubao.png'/>
                     <p>支付宝支付</p>
                   </span>
                </div>
