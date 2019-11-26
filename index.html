@@ -1,46 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!--<script src="https://cdn.bootcss.com/element-ui/2.4.0/index.js"></script>-->
-    <!--<script src="https://cdn.bootcss.com/echarts/3.7.0/echarts.min.js"></script>-->
-    <!-- 引入 cdn 资源 -->
-    <!--<script src="https://cdn.bootcss.com/vue/2.5.16/vue.min.js"></script>-->
-    <!--<script>-->
-      <!--//<![CDATA[-->
-      <!--if (typeof Vue == 'undefined') {-->
-        <!--document.write(unescape("%3Cscript src='https://cdn.staticfile.org/vue/2.6.10/vue.min.js' %3E%3C/script%3E"));-->
-      <!--} //]]>-->
-    <!--</script>-->
-    <!--<script src="https://cdn.bootcss.com/vue-router/3.0.1/vue-router.min.js"></script>-->
-    <!--<script>-->
-      <!--//<![CDATA[-->
-      <!--if (typeof VueRouter == 'undefined') {-->
-        <!--document.write(unescape("%3Cscript src='https://cdn.staticfile.org/vue-router/3.0.7/vue-router.min.js' %3E%3C/script%3E"));-->
-      <!--} //]]>-->
-    <!--</script>-->
-    <!--<script src="https://cdn.bootcss.com/element-ui/2.4.0/index.js"></script>-->
-    <!--<script>-->
-      <!--//<![CDATA[-->
-      <!--if (typeof ELEMENT == 'undefined') {-->
-        <!--document.write(unescape("%3Cscript src='https://cdn.staticfile.org/element-ui/2.10.1/index.js' %3E%3C/script%3E"));-->
-      <!--} //]]>-->
-    <!--</script>-->
-
-
-
-
+    <meta name="baidu-site-verification" content="0A4cbtNSYw" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>YeHao的博客</title>
+    <title>叶广豪的博客</title>
     <link rel="icon" type="image/x-icon" href="static/unicorn.png">
     <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <script>
+      //使用百度推送，加域判断 防止其他github用户也提交。
+        function baidu_Push() {
+          if(window.location.origin=="https://www.yeblog.club"||window.location.origin=="http://www.yeblog.club") {
+            (function () {
+              var bp = document.createElement('script');
+              var curProtocol = window.location.protocol.split(':')[0];
+              if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+              }
+              else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+              }
+              var s = document.getElementsByTagName("script")[0];
+              s.parentNode.insertBefore(bp, s);
+            })()
+          };
+        }
+      baidu_Push();
+
+    </script>
+
   </head>
   <body>
-  <!--<script src="https://cdn.bootcss.com/vue/2.5.16/vue.min.js"></script>-->
-  <!--<script src="https://cdn.bootcss.com/vue-router/3.0.1/vue-router.min.js"></script>-->
   <script src="https://unpkg.com/vue/dist/vue.js"></script>
   <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
   <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>

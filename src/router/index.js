@@ -25,6 +25,8 @@ export const router=new VueRouter({
 //路由守卫
 router.beforeEach((to,from,next)=>{
   NProgress.start()
+  //执行百度推送
+  baidu_Push();
   next()
   if (to.meta.requireAuth) {
         // console.log(store.state.isAuthenticated)
