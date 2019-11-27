@@ -116,6 +116,7 @@
 </script>
 
 <style>
+
 .head{
   width: 100%;
   height: auto;
