@@ -14,5 +14,5 @@
 3. npm run dev
 #### 使用说明
 1. 前端页面地址： http://localhost:8080
-2. 管理页面登录地址： http://localhost:8080/#/adminLogin
+2. 管理页面登录地址： http://localhost:8080/adminLogin
 3. 后端api地址：http://localhost:8031/api
