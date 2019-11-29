@@ -84,7 +84,8 @@ module.exports = {
     'vue': 'Vue',
     'element-ui': 'ELEMENT',
     'animate.css':'animated',
-    'highlight':'highlight'
+    'highlight':'hljs',
+    "to-markdown":"toMarkdown",
   },
 
 

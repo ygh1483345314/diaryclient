@@ -11,8 +11,6 @@
     mapGetters,
     mapActions
   } from 'vuex'
-import { markdown } from '../../markdown'
-
 export default {
   name: 'md-preview',
   props: ['contents'],
