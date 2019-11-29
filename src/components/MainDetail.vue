@@ -1,7 +1,7 @@
 <template>
   <div class="main loadingtext">
     <div  v-for="arr in articlesArr" :key="arr.id" class="main-detail">
-      <div style="animation-duration: 1000ms;" class="animated fadeIn">
+      <div >
         <div class="detail-tetile">
           <router-link :to="{path:'/BlogDetail/'+arr.id}"  v-html="arr.title"></router-link>
           <span v-if="arr.top==1" class="blog-top" >置顶</span>

@@ -5,7 +5,7 @@
       <div class="router-body">
         <HeadNav ></HeadNav>
         <div class="router-all">
-          <router-view />
+          <router-view  class="loadingbody"/>
         </div>
       </div>
       <Footer></Footer>

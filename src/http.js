@@ -12,11 +12,12 @@ axios.defaults.timeout = 20000
 var loadinginstace
 axios.interceptors.request.use(config => {
   // element ui Loading方法
-  loadinginstace = Loading.service({ fullscreen: true })
+  // loadinginstace = Loading.service({ fullscreen: true })
   //  loadinginstace = Loading.service({
+  //    fullscreen: true,
   //   text: '请稍等',
   //   target: document.querySelector('.loadingtext'),
-  //
+  //    // background: 'rgba(255,255,255,.4)',
   //  });
   var token=localStorage.getItem("token");
   if(token){
@@ -24,7 +25,7 @@ axios.interceptors.request.use(config => {
   }
   return config
 }, error => {
-  loadinginstace.close()
+  // loadinginstace.close()
   Message.error({
     message: '加载超时'
   })
@@ -49,10 +50,10 @@ axios.interceptors.response.use(data => {// 响应成功关闭loading
     if(authorization!=null&&authorization!=""){
         localStorage.setItem("token",authorization);
     }
-  loadinginstace.close()
+   // loadinginstace.close()
    return data
 }, error => {
-  loadinginstace.close()
+  // loadinginstace.close()
   Message.error({
     message: '加载失败'
   })
