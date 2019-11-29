@@ -19,9 +19,9 @@ export default [
     children:
       // getMenu()
     [
-      { path: '/Home',component:resolve => require(['@/components/Home'],resolve)},
-      { path: '/Archives',component:resolve => require(['@/components/views/Archives'],resolve) },
-      { path: '/Taglist', component:resolve => require(['@/components/views/Taglist'],resolve) },
+      { path: '/Home',component:resolve => require(['@/components/Home'],resolve),name:"叶广豪的博客"},
+      { path: '/Archives',component:resolve => require(['@/components/views/Archives'],resolve),name:"归档" },
+      { path: '/Taglist', component:resolve => require(['@/components/views/Taglist'],resolve),name:"分类和标签" },
       { path: '/BlogDetail/*', component:resolve => require(['@/components/views/BlogDetail'],resolve) },
       { path: '/BlogPage/*', component:resolve => require(['@/components/views/BlogPage'],resolve) },
     ]

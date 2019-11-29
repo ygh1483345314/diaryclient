@@ -1,5 +1,5 @@
 <template>
-  <div class="blogDetail-main">
+  <div class="blogDetail-main" v-wechat-title="article.title">
       <div class="blogDetail-all" v-if="article.id">
         <div class="blogDetail-tetile">{{article.title}}</div>
         <div class="blogDetail-date">

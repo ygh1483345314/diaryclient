@@ -11,11 +11,19 @@ import axios from "./http";
 import store from './store'
 import hljs from 'highlight.js' // 引入JS
 // import 'highlight.js/styles/googlecode.css' //样式文件
+
+
+import VueWechatTitle from 'vue-wechat-title'
+Vue.use(VueWechatTitle)
+
+// Vue.directive('title', {
+//   inserted: function (el, binding) {
+//     document.title = el.dataset.title
+//   }
+// })
+
 import photoPreview from './components/photoPreview'
-
-
 import Clipboard from 'v-clipboard'
-
 Vue.use(Clipboard)
 Vue.prototype.$axios = axios;
 
