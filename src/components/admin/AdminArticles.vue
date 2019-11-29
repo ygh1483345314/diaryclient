@@ -46,12 +46,12 @@
        >
       </el-table-column>
 
-      <!--<el-table-column-->
-        <!--prop="reading"-->
-        <!--label="浏览量"-->
-        <!--min-width="50px"-->
-       <!--&gt;-->
-      <!--</el-table-column>-->
+      <el-table-column
+        prop="reading"
+        label="浏览量"
+        min-width="50px"
+       >
+      </el-table-column>
 
       <!--prop="type"-->
       <el-table-column
