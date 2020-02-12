@@ -88,7 +88,7 @@
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 6%;
-  min-width: 600px;
+  /*min-width: 600px;*/
   max-width: 600px;
   justify-content: center
 }
